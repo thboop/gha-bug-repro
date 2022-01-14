@@ -6,8 +6,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          path: gha-bug-repro
       - name: export an environment variable
         uses: ./.github/actions/export-value
         with:
