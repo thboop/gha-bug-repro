@@ -10,12 +10,7 @@ inputs:
     required: true
 
 runs:
-  #using: 'docker'
-  using: 'composite'
-  #image: Dockerfile
-  steps:
-    - id: echo-value
-      shell: bash
-      run: echo $VALUE
-      env:
-        VALUE: ${{ inputs.value }}
+  using: 'docker'
+  image: Dockerfile
+  env:
+    VALUE: ${{ inptus.value }}
