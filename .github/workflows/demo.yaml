@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: export an environment variable
-        uses: ./github/actions/export-value
+        uses: ./.github/actions/export-value
         with:
           value: foo
       - name: Echo the explicitly passed value
-        uses: ./github/actions/echo-value
+        uses: ./.github/actions/echo-value
         with:
           value: bar
