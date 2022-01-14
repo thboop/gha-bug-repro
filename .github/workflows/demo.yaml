@@ -4,6 +4,7 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: export an environment variable
         uses: ./.github/actions/export-value
         with:
