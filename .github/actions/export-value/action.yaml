@@ -1,0 +1,14 @@
+# action.yml
+name: 'Export Value'
+description: 'Export a value'
+branding:
+  icon: anchor
+  color: yellow
+inputs:
+  value:
+    description: 'The value to export'
+    required: true
+
+runs:
+  using: 'node16'
+  main: index.js
