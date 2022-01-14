@@ -1,0 +1,14 @@
+name: demo
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set AWS_REGION environment variable
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-west-2
+      - name: Echo the explicitly passed AWS aws-region
+        uses: ./github/actions/echo-region
+        with:
+          aws-region: eu-west-1
