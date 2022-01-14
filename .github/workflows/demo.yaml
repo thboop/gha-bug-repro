@@ -7,6 +7,8 @@ jobs:
       - name: Set AWS_REGION environment variable
         uses: aws-actions/configure-aws-credentials@v1
         with:
+          aws-access-key-id: MYKEY
+          aws-secret-access-key: SOMESECRET
           aws-region: us-west-2
       - name: Echo the explicitly passed AWS aws-region
         uses: ./github/actions/echo-region
