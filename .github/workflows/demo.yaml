@@ -4,13 +4,11 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Set AWS_REGION environment variable
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: export an environment variable
+        uses: ./github/actions/export-value
         with:
-          aws-access-key-id: MYKEY
-          aws-secret-access-key: SOMESECRET
-          aws-region: us-west-2
-      - name: Echo the explicitly passed AWS aws-region
-        uses: ./github/actions/echo-region
+          value: foo
+      - name: Echo the explicitly passed value
+        uses: ./github/actions/echo-value
         with:
-          aws-region: eu-west-1
+          value: bar

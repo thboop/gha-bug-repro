@@ -1,0 +1,21 @@
+# action.yml
+name: 'Echo Value'
+description: 'Echo the explicitly value'
+branding:
+  icon: anchor
+  color: yellow
+inputs:
+  value:
+    description: 'The value to echo'
+    required: true
+
+runs:
+  #using: 'docker'
+  using: 'composite'
+  #image: Dockerfile
+  steps:
+    - id: echo-value
+      shell: bash
+      run: echo $VALUE
+      env:
+        VALUE: ${{ inputs.value }}
