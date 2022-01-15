@@ -1,6 +1,6 @@
 # action.yml
-name: 'Echo Value'
-description: 'Echo the explicitly value'
+name: 'Echo Value - Docker'
+description: 'Echo the explicitly passed value via a Docker action'
 branding:
   icon: anchor
   color: yellow
