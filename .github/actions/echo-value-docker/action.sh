@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Docker actions says: ${VALUE}"
+echo "Docker action says: ${VALUE}"
