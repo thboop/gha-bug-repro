@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: Dockerfile
   env:
-    VALUE: ${{ inptus.value }}
+    VALUE: ${{ inputs.value }}
