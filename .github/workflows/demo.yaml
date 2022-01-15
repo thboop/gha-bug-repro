@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      # - name: export an environment variable
-      #   uses: ./.github/actions/export-value
+      - name: export an environment variable
+        uses: ./.github/actions/export-value
       - name: Echo the explicitly passed value - composite action
         uses: ./.github/actions/echo-value-composite
       - name: Echo the explicitly passed value - docker action
