@@ -4,10 +4,6 @@ description: 'Echo the explicitly passed value via a Composite action'
 branding:
   icon: anchor
   color: yellow
-inputs:
-  value:
-    description: 'The value to echo'
-    required: true
 
 runs:
   using: 'composite'
@@ -17,4 +13,4 @@ runs:
       run: |
         echo "Composite action says: ${VALUE}"
       env:
-        VALUE: ${{ inputs.value }}
+        VALUE: bar

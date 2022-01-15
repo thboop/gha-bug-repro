@@ -4,10 +4,6 @@ description: 'Export a value'
 branding:
   icon: anchor
   color: yellow
-inputs:
-  value:
-    description: 'The value to export'
-    required: true
 
 runs:
   using: 'node16'

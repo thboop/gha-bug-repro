@@ -1,9 +1,8 @@
 const core = require('@actions/core');
 
 try {
-  const valueToExport = core.getInput('value');
-  console.log(`Exporting ${valueToExport}!`);
-  core.exportVariable('VALUE', valueToExport);
+  console.log(`Exporting 'foo'!`);
+  core.exportVariable('VALUE', 'foo');
 } catch (error) {
   core.setFailed(error.message);
 }

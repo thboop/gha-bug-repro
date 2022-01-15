@@ -8,13 +8,8 @@ jobs:
         uses: actions/checkout@v2
       - name: export an environment variable
         uses: ./.github/actions/export-value
-        with:
-          value: foo
       - name: Echo the explicitly passed value - composite action
         uses: ./.github/actions/echo-value-composite
-        with:
-          value: bar
       - name: Echo the explicitly passed value - docker action
         uses: ./.github/actions/echo-value-docker
-        with:
-          value: bar
+
