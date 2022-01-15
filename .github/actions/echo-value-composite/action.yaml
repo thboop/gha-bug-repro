@@ -14,6 +14,7 @@ runs:
   steps:
     - id: echo-value
       shell: sh
-      run: echo "Composite action says ${VALUE}"
+      run: |
+        echo "Composite action says: ${VALUE}"
       env:
         VALUE: ${{ inputs.value }}
